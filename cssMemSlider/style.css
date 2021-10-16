@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+input[name='btn']{
+    display: none;
+    
+}
+.slider-container{
+    margin: auto;
+    margin-top: 15vh;
+    height: 85vh;
+    width: 70vw;
+    overflow: hidden;
+}
+
+
+.slide{
+    
+    width: 12.5%;
+    
+}
+div.slide > img{
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    width: auto;
+    
+}
+.slides-wrapper{
+    display: flex;
+    width: 800%;            
+    height: 80%;
+}
+.buttons{
+    height: 15vh;
+    display: flex;
+    
+}
+.bar{
+
+    display: block;
+    margin-right: 55px;
+    width: 20px;
+    height: 80px;
+    background-color: chartreuse;
+}
+#btn1:checked ~ .slides-wrapper>.active{
+    margin-left: 0;
+}
+#btn2:checked ~ .slides-wrapper>.active{
+    margin-left: -12.5%;
+}
+#btn3:checked ~ .slides-wrapper>.active{
+    margin-left: -25%;
+}
+#btn4:checked ~ .slides-wrapper>.active{
+    margin-left: -37.5%;
+}
+#btn5:checked ~ .slides-wrapper>.active{
+    margin-left: -50%;
+}
+#btn6:checked ~ .slides-wrapper>.active{
+    margin-left: -62.5%;
+}
+#btn7:checked ~ .slides-wrapper>.active{
+    margin-left: -75%;
+}
+#btn8:checked ~ .slides-wrapper>.active{
+    margin-left: -87.5%;
+}
+
+#btn1:checked ~ .buttons>.bar1{
+    background-color: darkolivegreen;
+}
+
+#btn2:checked ~ .buttons>.bar2{
+    background-color: darkolivegreen;
+}
+
+#btn3:checked ~ .buttons>.bar3{
+    background-color: darkolivegreen;
+}
+
+#btn4:checked ~ .buttons>.bar4{
+    background-color: darkolivegreen;
+}
+
+#btn5:checked ~ .buttons>.bar5{
+    background-color: darkolivegreen;
+}
+
+#btn6:checked ~ .buttons>.bar6{
+    background-color: darkolivegreen;
+}
+
+#btn7:checked ~ .buttons>.bar7{
+    background-color: darkolivegreen;
+}
+
+#btn8:checked ~ .buttons>.bar8{
+    background-color: darkolivegreen;
+}
