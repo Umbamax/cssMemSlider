@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
 }
+body{
+    background-image: url(assets/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 input[name='btn']{
     display: none;
     
@@ -16,7 +21,7 @@ input[name='btn']{
 
 
 .slide{
-    
+    transition: all 0.8s ease-in-out;
     width: 12.5%;
     
 }
@@ -29,46 +34,84 @@ div.slide > img{
     width: auto;
     
 }
-.slides-wrapper{
-    display: flex;
-    width: 800%;            
-    height: 80%;
+.slides{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+ 
 }
-.buttons{
-    height: 15vh;
+.slides-wrapper{
+
     display: flex;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    width: 800%;            
+    height: 70vh;
     
 }
-.bar{
+.buttons{
+    height: 100%;
+    height: 15vh;
+    display: flex;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+.text-content-wrapper{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
 
+.text-content{
+    display: flex;
+    width: 800%;  
+    
+    font-size: 62px;
+
+}
+.slide-text{
+    display: block;
+    width: 12.5%;
+    transition: all 0.8s ease-in-out;
+}
+.bar{
     display: block;
     margin-right: 55px;
     width: 20px;
     height: 80px;
     background-color: chartreuse;
 }
-#btn1:checked ~ .slides-wrapper>.active{
+#btn1:checked ~ .slides-wrapper>.active,
+#btn1:checked ~ .text-content-wrapper>.text-content>.active-text{
     margin-left: 0;
 }
-#btn2:checked ~ .slides-wrapper>.active{
+#btn2:checked ~ .slides-wrapper>.active,
+#btn2:checked ~ .text-content-wrapper>.text-content>.active-text{
     margin-left: -12.5%;
 }
-#btn3:checked ~ .slides-wrapper>.active{
+#btn3:checked ~ .slides-wrapper>.active,
+#btn3:checked ~ .text-content-wrapper>.text-content>.active-text{
     margin-left: -25%;
 }
-#btn4:checked ~ .slides-wrapper>.active{
+#btn4:checked ~ .slides-wrapper>.active,
+#btn4:checked ~ .text-content-wrapper>.text-content>.active-text{
     margin-left: -37.5%;
 }
-#btn5:checked ~ .slides-wrapper>.active{
+#btn5:checked ~ .slides-wrapper>.active,
+#btn5:checked ~ .text-content-wrapper>.text-content>.active-text{
     margin-left: -50%;
 }
-#btn6:checked ~ .slides-wrapper>.active{
+#btn6:checked ~ .slides-wrapper>.active,
+#btn6:checked ~ .text-content-wrapper>.text-content>.active-text{
     margin-left: -62.5%;
 }
-#btn7:checked ~ .slides-wrapper>.active{
+#btn7:checked ~ .slides-wrapper>.active,
+#btn7:checked ~ .text-content-wrapper>.text-content>.active-text{
     margin-left: -75%;
 }
-#btn8:checked ~ .slides-wrapper>.active{
+#btn8:checked ~ .slides-wrapper>.active,
+#btn8:checked ~ .text-content-wrapper>.text-content>.active-text{
     margin-left: -87.5%;
 }
 
