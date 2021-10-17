@@ -96,6 +96,9 @@ label:hover .bar{
     transform: skew(-25deg) scale(1.15);
     
 }
+label:active .bar{
+    transform: skew(-25deg) scale(0.9);
+}
 #btn1:checked ~ .slides-wrapper>.active,
 #btn1:checked ~ .text-content-wrapper>.text-content>.active-text{
     margin-left: 0;
@@ -208,4 +211,16 @@ label:hover .bar{
     }
 
 
+}
+
+@media screen and (max-width: 400px){
+    .slides-wrapper{
+        height: 23vh;
+    }
+    .text-content-wrapper{
+        height: 22vh;
+    }
+    .text-content{
+        padding-top: 6vh;
+    }
 }
